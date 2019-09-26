@@ -89,10 +89,12 @@ $ pip3 install flask-graphql==1.4.1
       }
     }
   }
-} ```
+} 
+```
 
 
 `Create a person` 
+
 
 ```  mutation {
   createPerson (input: {
