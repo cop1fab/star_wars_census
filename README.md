@@ -1,6 +1,21 @@
 # star_wars_census
 Sample application that allows a user to see the list of all planets and people of star-wars. 
 
+# Get a copy of this work locally 
+
+Clone this repo with `git clone` 
+
+# Install the virtual environment and all dependenceies
+ 
+  ```
+$ pip3 install sqlalchemy==1.1.14
+$ pip3 install graphene==2.0.0
+$ pip3 install graphene-sqlalchemy==2.0.0
+$ pip3 install flask==0.11.1
+$ pip3 install flask-graphql==1.4.1
+
+```
+
 ` return people and their plannets.`
 
 ```query {
@@ -80,7 +95,6 @@ Sample application that allows a user to see the list of all planets and people 
 `Create a person` 
 
 ``` 
-
 mutation {
   createPerson (input: {
     name: "Alexis ROLLAND"
@@ -113,11 +127,13 @@ mutation {
     }
   }
 }
+
 ```
 
 `update a planet ` 
 
 ```
+
 mutation {
   updatePlanet (input:{
     id: "UGxhbmV0Ojk="
@@ -139,4 +155,5 @@ mutation {
     }
   }
 }
+
 ```
