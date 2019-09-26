@@ -94,8 +94,7 @@ $ pip3 install flask-graphql==1.4.1
 
 `Create a person` 
 
-``` 
-mutation {
+```  mutation {
   createPerson (input: {
     name: "Alexis ROLLAND"
     height: "189"
@@ -132,9 +131,7 @@ mutation {
 
 `update a planet ` 
 
-```
-
-mutation {
+``` mutation {
   updatePlanet (input:{
     id: "UGxhbmV0Ojk="
     population: "1000000000001"
@@ -155,5 +152,4 @@ mutation {
     }
   }
 }
-
 ```
